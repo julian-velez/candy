@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 290px;
+}
+
+
+.candy-cane {
+    font-size: 48px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(45deg, red 50%, white 50%);
+    background-size: 200% 100%;
+    color: white;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: candy-cane-animation 3s linear infinite;
+}
+
+@keyframes candy-cane-animation {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
